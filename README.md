@@ -1,8 +1,8 @@
 # Parvus
 
-An accessible, open-source image lightbox with no dependencies.
+Parvus is an accessible, open-source image lightbox with no dependencies.
 
-![Screenshot of parvus. It shows the first picture of a gallery.](https://rqrauhvmra.com/parvus/parvus.png)
+![Screenshot of Parvus. It shows the first picture of a gallery.](https://rqrauhvmra.com/parvus/parvus.png)
 
 [Open in CodePen](https://codepen.io/collection/DwLBpz)
 
@@ -52,7 +52,7 @@ Linking the `.css` and `.js` files to your HTML file. The HTML code may look lik
 
 ### Package managers
 
-Parvus is also available on npm.
+You can install Parvus through npm or yarn like any other dependency:
 
 ```
 npm install parvus --save
@@ -112,7 +112,7 @@ If you have a group of related images that you would like to combine into a set,
 </a>
 ```
 
-Instead of `data-group` you can also set the option `gallerySelector` to combine all images with the `selector` class within this selector into a group.
+Instead of `data-group`, you can also set the option `gallerySelector` to combine all images with the `selector` class within this selector into a group.
 
 ```html
 <div class="gallery">

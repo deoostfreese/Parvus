@@ -2,7 +2,7 @@
  * Parvus
  *
  * @author de Oostfreese
- * @version 1.4.0
+ * @version 1.4.1
  * @url https://github.com/deoostfreese/parvus
  *
  * MIT license
@@ -208,7 +208,7 @@
       } // Check if element already exists
 
 
-      if (GROUPS[newGroup].gallery.indexOf(el) === -1) {
+      if (!GROUPS[newGroup].gallery.includes(el)) {
         GROUPS[newGroup].gallery.push(el);
 
         if (el.querySelector('img') !== null) {
@@ -248,7 +248,7 @@
 
       const GROUP = getGroup(el); // Check if element exists
 
-      if (GROUPS[GROUP].gallery.indexOf(el) === -1) {
+      if (!GROUPS[GROUP].gallery.includes(el)) {
         throw new Error('Ups, I can\'t find the element.');
       } // TODO: Remove elements dynamically
 
@@ -374,7 +374,7 @@
 
       activeGroup = getGroup(el); // Check if element exists
 
-      if (GROUPS[activeGroup].gallery.indexOf(el) === -1) {
+      if (!GROUPS[activeGroup].gallery.includes(el)) {
         throw new Error('Ups, I can\'t find the element.');
       }
 
